@@ -66,3 +66,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/umi/umi-vendor.mk)
+
+# Call HyperOS Gallery,GalleryEditor,VideoPlayer
+$(call inherit-product-if-exists, vendor/xiaomi/miui-apps/miui-apps.mk)
