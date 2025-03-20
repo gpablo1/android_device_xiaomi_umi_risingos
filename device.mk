@@ -72,3 +72,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/miui-apps/miui-apps.mk)
 
 # Viper4AndroidFX
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
+# XiaomiParts
+$(call inherit-product, packages/apps/XiaomiParts/parts.mk)
