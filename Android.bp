@@ -6,12 +6,3 @@
 
 soong_namespace {
 }
-
-prebuilt_etc {
-    name: "compatibility_matrix.device.xiaomi.umi",
-    src: "vendor_compatibility_matrix.xml",
-    sub_dir: "vintf",
-    relative_install_path: "etc",
-    installable: true,
-    product_specific: true,
-}
