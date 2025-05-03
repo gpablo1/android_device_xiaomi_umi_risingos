@@ -14,10 +14,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from umi device
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
-# Extra Packages
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
-#$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)       # ViPER4AndroidFX
-
 # Extra Tags
 TARGET_HAS_UDFPS := true
 WITH_GMS := true
@@ -52,6 +48,7 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 PRODUCT_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_HARDWARE := true
