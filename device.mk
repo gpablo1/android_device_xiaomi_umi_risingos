@@ -75,3 +75,5 @@ $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
 # Miuiapps
 $(call inherit-product, vendor/xiaomi/miuiapps/config.mk)
+
+PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := true
